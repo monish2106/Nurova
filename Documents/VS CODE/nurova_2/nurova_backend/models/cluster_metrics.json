@@ -1,0 +1,11 @@
+{
+  "silhouette_score": 0.121,
+  "n_clusters": 4,
+  "cluster_names": {
+    "1": "NightScrollAddict",
+    "0": "StressScroller",
+    "3": "ProductiveSprinter",
+    "2": "ProcrastinationBinger"
+  },
+  "model_type": "KMeans"
+}

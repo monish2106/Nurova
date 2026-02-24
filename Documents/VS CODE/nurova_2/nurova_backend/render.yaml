@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: nurova-api
+    env: python
+    buildCommand: pip install -r requirements.txt && python train_models.py
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 2
+    envVars:
+      - key: YOUTUBE_API_KEY
+        sync: false
+      - key: FLASK_DEBUG
+        value: false
+      - key: PORT
+        value: 10000
+    autoDeploy: true

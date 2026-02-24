@@ -1,0 +1,16 @@
+{
+  "accuracy": 0.865,
+  "confusion_matrix": [
+    [
+      186,
+      23
+    ],
+    [
+      31,
+      160
+    ]
+  ],
+  "model_type": "VotingClassifier(LogReg + RandomForest)",
+  "training_samples": 1600,
+  "test_samples": 400
+}
